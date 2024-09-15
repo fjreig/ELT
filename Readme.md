@@ -17,20 +17,20 @@
 
 ### 2.1 postgres to File
 
-![Architecture](img/API3.png)
+![Architecture](img/3.png)
 
 ### 2.2 postgres to Mongo
 
-![Architecture](img/API2.png)
+![Architecture](img/2.png)
 
 ### 2.3 postgres to Postgres
 
-![Architecture](img/API1.png)
+![Architecture](img/1.png)
 
 ### 2.4 Estados Inversor
 
-![Architecture](img/API1.png)
+![Architecture](img/1.png)
 
 ### 2.5 Analitica
 
-![Architecture](img/API4.png)
+![Architecture](img/4.png)

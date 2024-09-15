@@ -14,8 +14,8 @@ services:
     image: postgres:latest
     container_name: postgres
     volumes:
-      - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
-      - ./sql/fill_tables.sql:/docker-entrypoint-initdb.d/fill_tables.sql
+      - ./postgres-data/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+      - ./postgres-data/fill_tables.sql:/docker-entrypoint-initdb.d/fill_tables.sql
     ports:
       - "5432:5432"
     env_file:

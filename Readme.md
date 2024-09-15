@@ -29,7 +29,7 @@
 
 ### 2.4 Estados Inversor
 
-![Architecture](img/1.png)
+![Architecture](img/5.png)
 
 ### 2.5 Analitica
 

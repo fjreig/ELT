@@ -13,6 +13,9 @@
 | 3 | Postgres | Postgres DB | 5432 | - |
 | 4 | Clickhouse | Clickhouse DB | 8123 | - |
 
+> [!WARNING]
+> La unica BBDD con datos es postgres que cuenta con dos tablas de datos y dos tablas vacias
+
 ## 2. Pipeline
 
 ### 2.1 postgres to File

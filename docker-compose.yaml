@@ -1,0 +1,46 @@
+services:
+  hop:
+    image: apache/hop-web:latest
+    container_name: hop
+    volumes:
+      - ./plugins:/files/jdbc
+      - ./projects:/usr/local/tomcat/webapps/ROOT/config/projects/default
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+  
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    volumes:
+      - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+      - ./sql/fill_tables.sql:/docker-entrypoint-initdb.d/fill_tables.sql
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    env_file:
+      - .env
+  
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse
+    ports:
+      - "9000:9000"
+      - "8123:8123"
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 262144
+        hard: 262144
+    volumes:
+      - ./ClickHouse/config.xml:/etc/clickhouse-server/config.xml
+    env_file:
+      - .env

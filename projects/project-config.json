@@ -1,0 +1,17 @@
+{
+  "metadataBaseFolder" : "${PROJECT_HOME}/metadata",
+  "unitTestsBasePath" : "${PROJECT_HOME}",
+  "dataSetsCsvFolder" : "${PROJECT_HOME}/datasets",
+  "enforcingExecutionInHome" : true,
+  "config" : {
+    "variables" : [ {
+      "name" : "ALARMAS_HORA_MIN",
+      "value" : "8",
+      "description" : "Hora Arranque Inversores"
+    }, {
+      "name" : "ALARMAS_HORA_MAX",
+      "value" : "20",
+      "description" : "Hora Apagado Inversores"
+    } ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "authenticationDatabaseName": "",
+  "usingKerberos": false,
+  "journaled": true,
+  "dbName": "Monitorizacion",
+  "authenticationUser": "",
+  "connectTimeoutMs": "",
+  "writeConcern": "",
+  "authenticationPassword": "Encrypted ",
+  "usingAllReplicaSetMembers": false,
+  "usingSslSocketFactory": false,
+  "replicationTimeoutMs": "",
+  "hostname": "mongo",
+  "port": "27017",
+  "name": "mongo",
+  "readPreference": "PRIMARY",
+  "socketTimeoutMs": "",
+  "readPrefTagSets": "",
+  "authenticationMechanism": "PLAIN"
+}

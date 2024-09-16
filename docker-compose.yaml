@@ -3,7 +3,7 @@ services:
     image: apache/hop-web:latest
     container_name: hop
     volumes:
-      - ./plugins:/files/jdbc
+      - ./plugins:/usr/local/tomcat/lib/jdbc
       - ./projects:/usr/local/tomcat/webapps/ROOT/config/projects/default
     ports:
       - "8080:8080"
